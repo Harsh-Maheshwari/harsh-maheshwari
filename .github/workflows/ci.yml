@@ -1,0 +1,15 @@
+name: deploy_mkdocs
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs mkdocs-material mknotebooks pygments jupytext mkdocs-jupyter pymdown-extensions mkdocs-roamlinks-plugin mkdocs-awesome-pages-plugin mkdocs-material-extensions
+      - run: mkdocs gh-deploy --force

@@ -1,0 +1,11 @@
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-exclude
+mkdocs-awesome-pages-plugin
+mknotebooks
+pymdown-extensions
+pygments
+jupytext
+mkdocs-jupyter
+mkdocs-roamlinks-plugin
