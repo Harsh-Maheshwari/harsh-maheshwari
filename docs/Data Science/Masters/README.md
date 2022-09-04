@@ -1,2 +1,0 @@
-# Equivalent Data Science Masters
-
